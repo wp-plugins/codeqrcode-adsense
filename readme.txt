@@ -42,13 +42,13 @@ Just copy & paste AdSense or any other third party Ad code to box and optionally
 
 If already have registered CodeQRCode account and own website that is using Wordpress please skip to step 2
 
-**1. step** : [Sign Up] (http://www.codeqrcode.com/analytics/signup "CodeQRCode sign up") and get free CodeQRCode account and your Application ID.
+**1. step** : [CodeQRCode Sign Up](http://www.codeqrcode.com/analytics/signup) and get free CodeQRCode account and your Application ID.
 
 Fill your information and click “Create new account”
 You will get verification email with activation link
 (please check SPAM folder if it is missing).  After activating your account proceed to login to CodeQRCode.
 
-**2. step** : [Sign in] (http://www.codeqrcode.com/analytics/qranalytics) and get your CodeQRCode Application ID
+**2. step** : [Sign in](http://www.codeqrcode.com/analytics/qranalytics) and get your CodeQRCode Application ID
 
 After logging in, go to your profile and copy Application ID
 
@@ -62,8 +62,7 @@ Paste your CodeQRCode Application ID from previous step.
 
 **WELL DONE!** CodeQRCode is now active on your Wordpress website and you should be able to see your dynamic QR codes in plugin settings and CodeQRCode drag n drop widget.
 
-Now you can [Log in] (http://www.codeqrcode.com/analytics/qranalytics) to the CodeQRCode and create more dynamic QR codes.
-To track statistics and for get additional configuration, please [login] (http://www.codeqrcode.com/analytics/qranalytics) to CodeQRCode dashboard.
+Now you can [Log in](http://www.codeqrcode.com/analytics/qranalytics) to the CodeQRCode and create more dynamic QR codes or to track statistics and for get additional configuration to CodeQRCode dashboard.
 
 ####Questions? Contact us!####
 
@@ -83,7 +82,7 @@ Change type from static to dynamic QR codes if desired.
 
 = Where can I find analytics for QR code scans? =
 
-[login] (http://www.codeqrcode.com/analytics/qranalytics) to CodeQRCode and click statistics for desired QR code. Please note that only scans of dynamic QR codes are tracked.
+[login](http://www.codeqrcode.com/analytics/qranalytics) to CodeQRCode and click statistics for desired QR code. Please note that only scans of dynamic QR codes are tracked.
 
 = Can I use this plugin to server Ad Sense or any other Ad code ?=
 Yes you can! This is bonus feature for you! Just go to plugin settings and enable Ad serving checkbox. It will reveal 3 fields where you can paste your ad code. Later in Appearance -> Widgets you can drag and drop CodeQRCode-Adsense widget to desired position.
