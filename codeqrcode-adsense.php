@@ -3,7 +3,7 @@
 Plugin Name: QRCode Generator - Adsense
 Plugin URI: http://www.codeqrcode.com/
 Description: CodeQRCode plugin enables you to automatically generate QR codes on each post and page on your wordpress site. It also enables you to place dynamic QR codes using widget. Dynamic QR code enables you to track number of scans, device type, and change URL destination.
-Version: 1.0
+Version: 1.1
 Author: Aklamator
 Author URI: http://www.codeqrcode.com/
 License: GPL2
@@ -45,6 +45,7 @@ function codeQRCode_set_up_options(){
     add_option('codeQRCodeSingleWidgetID', '');
     add_option('codeQRCodePageWidgetID', '');
     add_option('codeQRCodeSingleWidgetTitle', '');
+    add_option('codeQRCodeShadow', 'on');
 
     // Ads codes
     add_option('codeQRCodeAds', '');
@@ -85,6 +86,7 @@ function codeQRCode_uninstall()
     delete_option('codeQRCodeSingleWidgetID');
     delete_option('codeQRCodePageWidgetID');
     delete_option('codeQRCodeSingleWidgetTitle');
+    delete_option('codeQRCodeShadow');
     // Ads codes
     delete_option('codeQRCodeAds');
     delete_option('codeQRCodeAds2');
@@ -190,15 +192,16 @@ function show_qr_code_img($type, $img_size, $align, $margin, $called_from = ""){
 
     ?>
 
-
-
-    <style>
-
-
-    </style>
-
 <?php
-    $output = '<div style="float:'.$align.'" class="qrCodeTable"><table>';
+
+    if(get_option('codeQRCodeShadow')){
+        $style='box-shadow: 10px 10px 5px #888888;';
+    }else{
+        $style='';
+    }
+
+
+    $output = '<div style="float:'.$align.'; '.$style.'" class="qrCodeTable"><table>';
 
         // We need to check if user is entered title to be displayed above qr code
         if(get_option('codeQRCodeSingleWidgetTitle') !="" && $called_from =="") {
@@ -218,6 +221,7 @@ function show_qr_code_img($type, $img_size, $align, $margin, $called_from = ""){
         }
 
         $output.='</table></div>';
+        $output.='<div style="clear:both"></div>';
 
 
     return $output;

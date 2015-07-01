@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: (aklamator)
 Donate link: http://www.codeqrcode.com/
-Tags: qr scan, qr generator, qr, qr code, dynamic qr code, static qr code, adSense, custom ad, ads, widget, widgets, statistic, tracking, Technorati, ContextWeb, Amazon Associates, Chitika, Tribal Fusion, Propeller Ads Media, Adversal, Revenue Hits
+Tags: qrcode, qr scan, qr generator, qr, qr code, dynamic qr code, static qr code, adSense, custom ad, ads, widget, widgets, statistic, tracking, Technorati, ContextWeb, Amazon Associates, Chitika, Tribal Fusion, Propeller Ads Media, Adversal, Revenue Hits
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,7 +84,7 @@ Change type from static to dynamic QR codes if desired.
 
 [login](http://www.codeqrcode.com/analytics/qranalytics) to CodeQRCode and click statistics for desired QR code. Please note that only scans of dynamic QR codes are tracked.
 
-= Can I use this plugin to server Ad Sense or any other Ad code ?=
+= Can I use this plugin to server Ad Sense or any other Ad code? =
 Yes you can! This is bonus feature for you! Just go to plugin settings and enable Ad serving checkbox. It will reveal 3 fields where you can paste your ad code. Later in Appearance -> Widgets you can drag and drop CodeQRCode-Adsense widget to desired position.
 
 == Screenshots ==
@@ -96,6 +96,9 @@ Yes you can! This is bonus feature for you! Just go to plugin settings and enabl
 
 
 == Changelog ==
+
+= 1.1 =
+* Added option to enable/disable shadow for qrCodes
 
 = 1.0 =
 * First version of CodeQRCode AdSense plugin widget

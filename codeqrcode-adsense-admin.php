@@ -119,6 +119,7 @@ class CodeqrcodeWidget
         register_setting('codeQRCode-options', 'codeQRCodeSingleWidgetID');
         register_setting('codeQRCode-options', 'codeQRCodePageWidgetID');
         register_setting('codeQRCode-options', 'codeQRCodeSingleWidgetTitle');
+        register_setting('codeQRCode-options', 'codeQRCodeShadow');
         // Ads codes
         register_setting('codeQRCode-options', 'codeQRCodeAds');
         register_setting('codeQRCode-options', 'codeQRCodeAds2');
@@ -322,10 +323,17 @@ class CodeqrcodeWidget
 
                     <h3><?php _e('QR codes Settings :'); ?></h3>
 
+                    <p>
+                        <input type="checkbox" id="codeQRCodeShadow" name="codeQRCodeShadow" <?php echo (get_option("codeQRCodeShadow") == true ? 'checked="checked"' : ''); ?>>
+                        <label for="codeQRCodeSingleWidgetTitle"><strong>Enable Shadow</strong> on QR codes</label><br/>
+                    </p>
+
                     <label for="codeQRCodeSingleWidgetTitle">Title Above Adsence code (Optional): </label><br/>
                     <input type="text" style="width: 300px; margin:10px 0px" name="codeQRCodeSingleWidgetTitle" id="codeQRCodeSingleWidgetTitle" value="<?php echo (get_option("codeQRCodeSingleWidgetTitle")); ?>" maxlength="999" />
 
+
                     <table border="0" cellspacing="5" cellpadding="0">
+
                         <tr valign="top">
                             <td align="left" style="padding:0px 10px"><input type="checkbox" id="enableQROnSingle" name="enableQROnSingle" <?php echo (get_option("enableQROnSingle") == true ? 'checked="checked"' : ''); ?>></td>
                             <td align="left"><strong>to End of each Post</strong> </td>
@@ -373,7 +381,7 @@ class CodeqrcodeWidget
 
                     <p>
                         <input type="checkbox" id="ad_setting_box">
-                        Bonus: Use this plugin to serve <strong>Ad Codes</strong> using separate widget in Appearance->widgets. <br />
+                        <strong>Bonus</strong>: Use this plugin to serve <strong>Ad Codes</strong> using separate widget in Appearance->widgets. <br />
                     </p>
 
 
@@ -495,9 +503,6 @@ class CodeqrcodeWidget
                     }
 
                 });
-
-
-
 
                 if ($('table').hasClass('dynamicTable')) {
                     $('.dynamicTable').dataTable({
