@@ -3,8 +3,8 @@ Contributors: (aklamator)
 Donate link: http://www.codeqrcode.com/
 Tags: qrcode, qr scan, qr generator, qr, qr code, dynamic qr code, static qr code, adSense, custom ad, ads, widget, widgets, statistic, tracking, Technorati, ContextWeb, Amazon Associates, Chitika, Tribal Fusion, Propeller Ads Media, Adversal, Revenue Hits
 Requires at least: 3.0.1
-Tested up to: 4.2.2
-Stable tag: 1.1
+Tested up to: 4.2.3
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,10 @@ Yes you can! This is bonus feature for you! Just go to plugin settings and enabl
 
 
 == Changelog ==
+
+= 1.2 =
+* Added please "rate and review" link in plugin section
+* Tested up to 4.2.3 (newest wp version)
 
 = 1.1 =
 * Added option to enable/disable shadow for qrCodes
