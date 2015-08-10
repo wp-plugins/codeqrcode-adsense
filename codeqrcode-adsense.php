@@ -3,7 +3,7 @@
 Plugin Name: QRCode Generator - Adsense
 Plugin URI: http://www.codeqrcode.com/
 Description: CodeQRCode plugin enables you to automatically generate QR codes on each post and page on your wordpress site. It also enables you to place dynamic QR codes using widget. Dynamic QR code enables you to track number of scans, device type, and change URL destination.
-Version: 1.2
+Version: 1.3
 Author: Aklamator
 Author URI: http://www.codeqrcode.com/
 License: GPL2
